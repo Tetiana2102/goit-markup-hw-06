@@ -402,13 +402,37 @@
             </div>
 </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+        <!--Модалка-->
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-icon">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#">
+                <input 
+                type="text" 
+                class="form-input" 
+                name="user-name"/>
+                <input 
+                type="tel"
+                class="form-input" 
+                name="user-tel"/>
+                <input 
+                type="email" 
+                class="form-input" 
+                name="user-email"/>
+                <input 
+                type="text" 
+                class="form-input" 
+                placeholder="Введите текст" 
+                name="user-comments"/>
+                <button  class="modal-btn" type="submit">
+                    <span class="modal-btn-text">Отправить</span>
+                </button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
