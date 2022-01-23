@@ -412,23 +412,34 @@
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#">
+            <div class="form-field">
+                <label class="input-text" for="user-name">Имя</label>
                 <input 
                 type="text" 
                 class="form-input" 
-                name="user-name"/>
+                name="user-name"
+                id="user-name" required/>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-tel">Телефон</label>
                 <input 
                 type="tel"
                 class="form-input" 
-                name="user-tel"/>
+                name="user-tel"
+                id="user-tel"/>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-email">Почта</label>
                 <input 
                 type="email" 
                 class="form-input" 
-                name="user-email"/>
-                <input 
-                type="text" 
-                class="form-input" 
-                placeholder="Введите текст" 
-                name="user-comments"/>
+                name="user-email"
+                id="user-email"/>
+            </div>
+            <div class="form-field">
+                <label class="input-text" for="user-comments">Комментарий</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
                 <button  class="modal-btn" type="submit">
                     <span class="modal-btn-text">Отправить</span>
                 </button>
